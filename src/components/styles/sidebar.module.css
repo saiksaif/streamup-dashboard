@@ -1,0 +1,23 @@
+.sidebarMain {
+    padding: 0;
+}
+.sidebarInner {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sidebarNav {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+}.sidebarNav:hover {
+    padding-right: 5;
+    overflow-y: scroll;
+}
+.sidebarLogout {
+    height: fit-content;
+    margin-bottom: 10px;
+    text-align: center;
+}

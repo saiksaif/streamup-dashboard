@@ -17,6 +17,11 @@ import Blogs from "./pages/Blogs";
 import Subscribers from "./pages/Subscribers"; 
 import Contacts from "./pages/Contacts"; 
 import Faqs from "./pages/Faqs"; 
+import Onboard from "./pages/Onboard";
+import Categories from "./pages/Categories";
+import Settings from "./pages/Settings";
+
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
 import Layout from "./components/Layout";
@@ -44,9 +49,13 @@ function App() {
           <Route path="/subscribers" element={<Subscribers />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/faqs" element={<Faqs />} />
-
-          <Route path="*" element={<NotFound />} />
+          <Route path="/onboard" element={<Onboard />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/settings" element={<Settings />} />
         </Route>
+
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
   );
 }

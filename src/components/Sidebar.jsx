@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect }  from 'react'
 import { Link } from 'react-router-dom'
+import styles from "./styles/sidebar.module.css";
 
 import AppsIcon from '@mui/icons-material/Apps';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
@@ -20,193 +21,48 @@ import SubjectIcon from '@mui/icons-material/Subject';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 
+import SidebarLink from './SidebarLink';
+
 function Sidebar() {
     return (
-        <div className="relative bg-white">
-            <div className="flex flex-col sm:flex-row sm:justify-around">
-                <div className="h-screen w-100 overflow-y-hidden bg-grey-400">
-                    <div className="flex items-center justify-start mx-6 my-4">
-                        {/* <img className="h-10" src="/icons/rocket.svg" /> */}
-                        <span className="text-gray-600 ml-4 text-2xl font-bold">
-                            Sidebar
+        <div className={"flex " + styles.sidebarMain}>
+            <div className={"h-screen " + styles.sidebarInner}>
+                <div className="flex items-center justify-start mx-6 my-4">
+                    {/* <img className="h-10" src="/icons/rocket.svg" /> */}
+                    <span className="text-gray-600 ml-4 text-2xl font-bold">
+                        StreamUp Dash
+                    </span>
+                </div>
+                <nav className={"mt-6 px-4 w-100 " + styles.sidebarNav}>
+                    <SidebarLink href="/" name="Dashboard" icon={<AppsIcon />} />
+                    <SidebarLink href="/users" name="Users" icon={<PeopleAltIcon />} />
+                    <SidebarLink href="/agencies" name="Agencies" icon={<AssignmentIcon />} />
+                    <SidebarLink href="/notifications" name="Notifications" icon={<NotificationsIcon />} />
+                    <SidebarLink href="/transactions" name="Transactions" icon={<AttachMoneyIcon />} />
+                    <SidebarLink href="/advertisements" name="Advertisements" icon={<SpeakerIcon />} />
+                    <SidebarLink href="/news-feed" name="Newsfeeds" icon={<DescriptionIcon />} />
+                    <SidebarLink href="/stories" name="Stories" icon={<CameraIcon />} />
+                    <SidebarLink href="/banners" name="Banners" icon={<LayersIcon />} />
+                    <SidebarLink href="/stores" name="Stores" icon={<LayersIcon />} />
+                    <SidebarLink href="/audio-streaming" name="Audio Streaming" icon={<GraphicEqIcon />} />
+                    <SidebarLink href="/video-streaming" name="Video Streaming" icon={<GraphicEqIcon />} />
+                    <SidebarLink href="/news" name="News" icon={<ReportProblemIcon />} />
+                    <SidebarLink href="/blog" name="Blog" icon={<FeedIcon />} />
+                    <SidebarLink href="/subscribers" name="Subscribers" icon={<FeedIcon />} />
+                    <SidebarLink href="/contact" name="Contact" icon={<LocalPhoneIcon />} />
+                    <SidebarLink href="/faqs" name="FAQs" icon={<ErrorIcon />} />
+                    <SidebarLink href="/onboard" name="Onboard" icon={<NoteAddIcon />} />
+                    <SidebarLink href="/categories" name="Categories" icon={<SubjectIcon />} />
+                    <SidebarLink href="/settings" name="Settings" icon={<SettingsIcon />} />
+                </nav>
+                <hr />
+                <div className={styles.sidebarLogout}>
+                    <Link className="w-100 text-gray-600 hover:text-gray-800 transition-colors duration-200 flex justify-center py-2 px-8" to="/login">
+                        <span className="mx-2 font-medium text-red-500">
+                            Logout
                         </span>
-                    </div>
-                    <nav className="mt-6 px-4 w-100 overflow-y-scroll">
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg" to="/">
-                            <AppsIcon />
-                            <span className="mx-2 font-normal">
-                                Dashboard
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-800 rounded-lg bg-gray-100" to="/users">
-                            <PeopleAltIcon />
-                            <span className="mx-2 font-normal">
-                                Users
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/agencies">
-                            <AssignmentIcon />
-                            <span className="mx-2 font-normal">
-                                Agencies
-                            </span>
-                            <span className="flex-grow text-right">
-                                <button type="button" className="w-6 h-6 text-xs  rounded-full text-white bg-red-500">
-                                    <span className="p-1">
-                                        7
-                                    </span>
-                                </button>
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <NotificationsIcon />
-                            <span className="mx-2 font-normal">
-                                Notifications
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <AttachMoneyIcon />
-                            <span className="mx-2 font-normal">
-                                Transactions
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <SpeakerIcon />
-                            <span className="mx-2 font-normal">
-                                Advertisements
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <DescriptionIcon />
-                            <span className="mx-2 font-normal">
-                                Newsfeeds
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <CameraIcon />
-                            <span className="mx-2 font-normal">
-                                Stories
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <LayersIcon />
-                            <span className="mx-2 font-normal">
-                                Banners
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <LayersIcon />
-                            <span className="mx-2 font-normal">
-                                Stores
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <GraphicEqIcon />
-                            <span className="mx-2 font-normal">
-                                Audio Streaming
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <GraphicEqIcon />
-                            <span className="mx-2 font-normal">
-                                Video Streaming
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <ReportProblemIcon />
-                            <span className="mx-2 font-normal">
-                                News
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <FeedIcon />
-                            <span className="mx-2 font-normal">
-                                Blog
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <FeedIcon />
-                            <span className="mx-2 font-normal">
-                                Subscribers
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <LocalPhoneIcon />
-                            <span className="mx-2 font-normal">
-                                Contact
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <ErrorIcon />
-                            <span className="mx-2 font-normal">
-                                FAQs
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <NoteAddIcon />
-                            <span className="mx-2 font-normal">
-                                Onboard
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <SubjectIcon />
-                            <span className="mx-2 font-normal">
-                                Categories
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                        <Link className="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-2 transition-colors duration-200  text-gray-600 rounded-lg " to="/notifications">
-                            <SettingsIcon />
-                            <span className="mx-2 font-normal">
-                                Settings
-                            </span>
-                            <span className="flex-grow text-right">
-                            </span>
-                        </Link>
-                    
-                        <hr />
-
-                        <Link className="text-gray-600 hover:text-gray-800 transition-colors duration-200 flex items-center py-2 px-8" to="/">
-                            <span className="mx-2 font-medium">
-                                Logout
-                            </span>
-                            <LogoutIcon />
-                        </Link>
-                    </nav>
+                        <LogoutIcon className='text-red-500' />
+                    </Link>
                 </div>
             </div>
         </div>
