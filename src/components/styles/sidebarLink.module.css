@@ -1,7 +1,6 @@
 .gradienticon  {
     position: relative;
     padding: 0.5rem;
-    /* padding-bottom: 2px; */
     text-decoration: none;
     transition: 0.3s;
 }
@@ -18,26 +17,80 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background: #444;
-    background: linear-gradient(120deg, #eb1a8f,#6c2c78, #055a9d);
     justify-content: space-around;
+    background: linear-gradient(120deg, #eb1a8f,#6c2c78, #055a9d);
 }
+/* .gradienticon:hover::before {
+    background: linear-gradient(to right, #eb1a8f, #6c2c78, #055a9d);
+} */
+/* .gradienticon:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    justify-content: space-around;
+    background: linear-gradient(to right, #eb1a8f, #6c2c78, #055a9d);
+    animation: 1s underlineGr linear;
+    transition: background 1s;
+  }
+  
+  @keyframes underlineGr {
+    0% {
+      background: linear-gradient(to right, #fff, #fff, #fff);
+    }
+    20% {
+      background: linear-gradient(to right, #eb1a8f, #fff, #fff);
+    }
+    30% {
+      background: linear-gradient(to right, #eb1a8f, #eb1a8f, #fff);
+    }
+    55% {
+      background: linear-gradient(to right, #eb1a8f, #6c2c78, #fff);
+    }
+    70% {
+      background: linear-gradient(to right, #eb1a8f, #6c2c78, #6c2c78);
+    }
+    100% {
+      background: linear-gradient(to right, #eb1a8f, #6c2c78, #055a9d);
+    }
+  } */
+  
+/* .gradienticon:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    justify-content: space-around;
+    background: linear-gradient(to right, #fff, #fff, #fff);
+    animation: 1s underlineGr ease-in-out;
+    transition: 1s;
+  }
+  @keyframes underlineGr {
+    20% {
+        background: linear-gradient(to right, #eb1a8f, #fff, #fff);
+    }
+    55% {
+        background: linear-gradient(to right, #eb1a8f, #6c2c78, #fff);
+    }
+    100% {
+        background: linear-gradient(to right, #eb1a8f, #6c2c78, #055a9d);
+    }
+  } */
 
 .gradienticonA {
     padding: 0.5rem;
     color: white;
     position: relative;
-    /* padding-bottom: 2px; */
     text-decoration: none;
-    /* transition: 0.3s; */
     content: "";
-    /* position: absolute; */
     bottom: 2px;
     left: 0;
-    /* height: 2px; */
     width: 100%;
     background: #444;
     background: linear-gradient(140deg, #eb1a8f,#6c2c78, #055a9d);
-    /* justify-content: space-around; */
     border-radius: 7px;
 }
