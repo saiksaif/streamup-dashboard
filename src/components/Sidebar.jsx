@@ -2,23 +2,9 @@ import React, { useState, useEffect }  from 'react'
 import { Link } from 'react-router-dom'
 import styles from "./styles/sidebar.module.css";
 
-import AppsIcon from '@mui/icons-material/Apps';
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import AssignmentIcon from '@mui/icons-material/Assignment';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import SpeakerIcon from '@mui/icons-material/Speaker';
-import DescriptionIcon from '@mui/icons-material/Description';
-import CameraIcon from '@mui/icons-material/Camera';
-import LayersIcon from '@mui/icons-material/Layers';
 import GraphicEqIcon from '@mui/icons-material/GraphicEq';
-import ReportProblemIcon from '@mui/icons-material/ReportProblem';
-import FeedIcon from '@mui/icons-material/Feed';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import ErrorIcon from '@mui/icons-material/Error';
-import NoteAddIcon from '@mui/icons-material/NoteAdd';
 import SubjectIcon from '@mui/icons-material/Subject';
-import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
@@ -37,6 +23,7 @@ import SummarizeOutlinedIcon from '@mui/icons-material/SummarizeOutlined';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 import NoteAddOutlinedIcon from '@mui/icons-material/NoteAddOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 import SidebarLink from './SidebarLink';
 
@@ -70,7 +57,7 @@ function Sidebar() {
                     <SidebarLink href="/faqs" name="FAQs" icon={<LiveHelpOutlinedIcon />} />
                     <SidebarLink href="/onboard" name="Onboard" icon={<NoteAddOutlinedIcon />} />
                     <SidebarLink href="/categories" name="Categories" icon={<SubjectIcon />} />
-                    <SidebarLink href="/settings" name="Settings" icon={<SettingsIcon />} />
+                    <SidebarLink href="/settings" name="Settings" icon={<SettingsOutlinedIcon />} />
                 </nav>
                 <hr />
                 <div className={styles.sidebarLogout + ' my-3'}>
