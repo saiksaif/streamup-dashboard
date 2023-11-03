@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from "react-router-dom"
 
-import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
-import SquareRoundedIcon from '@mui/icons-material/SquareRounded';
 import styles from "./styles/SidebarLink.module.css";
 
 function SidebarLink(props) {
