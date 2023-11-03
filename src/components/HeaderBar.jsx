@@ -2,7 +2,7 @@ import React from "react";
 
 function HeaderBar() {
   return (
-    <div className="shadow-lg rounded-2xl bg-white p-3">
+    <div className="shadow-lg hover:shadow-2xl duration-300 rounded-2xl bg-white p-3">
       <div className="flex-row gap-4 flex justify-end items-center">
         <div className=" flex flex-col">
           <span className="text-md font-medium text-gray-600">

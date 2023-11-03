@@ -13,7 +13,7 @@ const location = useLocation();
         to={props.href}
     >
         {props.icon}
-        <span className={"mx-2 font-normal "}>
+        <span className={"mx-2 font-normal"}>
             {props.name}
         </span>
 

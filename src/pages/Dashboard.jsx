@@ -1,4 +1,5 @@
 import StatCard from "../components/StatCard"
+import DataTable from "../components/DataTable"
 
 function Dashboard() {
   const stats = [
@@ -61,11 +62,14 @@ function Dashboard() {
 
   return (
     <div>
-      <div className="w-100 flex flex-row flex-wrap gap-5">
+      <div className="w-100 flex flex-col md:flex-row flex-wrap">
         {stats.map((stat, index) => (
           <StatCard key={index} title={stat.title} stat={stat.stat} image={stat.image} />
           )
           )}
+      </div>
+      <div className="w-100 px-5 pb-5">
+        <DataTable />
       </div>
     </div>
   )

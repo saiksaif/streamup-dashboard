@@ -16,11 +16,11 @@ function Layout() {
             <div className='hidden md:block md:w-3/12 xl:w-2/12 p-0'>
                 <Sidebar />
             </div>
-            <div className={'w-screen md:w-9/12 xl:w-10/12 flex flex-col ' + styles.pageBgColor}>
+            <div className={'w-screen md:w-9/12 xl:w-10/12 flex flex-col  overflow-y-scroll ' + styles.pageBgColor}>
               <div className='hidden md:block w-100 p-5'>
                 <HeaderBar />
               </div>
-              <div className='w-100 px-5'>
+              <div className='w-100'>
                 <Outlet />
               </div>
             </div>
