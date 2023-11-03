@@ -1,0 +1,41 @@
+.gradienticon  {
+    position: relative;
+    padding: 0.5rem;
+    /* padding-bottom: 2px; */
+    text-decoration: none;
+    transition: 0.3s;
+}
+.gradienticon:hover {
+    padding: 0.75rem;
+}
+  
+.gradienticon:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #444;
+    background: linear-gradient(120deg, #eb1a8f,#6c2c78, #055a9d);
+    justify-content: space-around;
+}
+
+.gradienticonA {
+    padding: 0.5rem;
+    color: white;
+    position: relative;
+    /* padding-bottom: 2px; */
+    text-decoration: none;
+    /* transition: 0.3s; */
+    content: "";
+    /* position: absolute; */
+    bottom: 2px;
+    left: 0;
+    /* height: 2px; */
+    width: 100%;
+    background: #444;
+    background: linear-gradient(140deg, #eb1a8f,#6c2c78, #055a9d);
+    /* justify-content: space-around; */
+    border-radius: 7px;
+}
