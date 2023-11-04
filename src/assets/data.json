@@ -1,0 +1,130 @@
+{
+    "header": {
+        "name": "Charlie",
+        "position": "CTO",
+        "picture": "/user.jpg"
+    },
+    "dashboard": {
+        "stats": [
+            {
+                "title": "Wallet",
+                "stat": 12,
+                "image": "/svgIcons/wallet2.svg"
+            },
+            {
+                "title": "Notifications",
+                "stat": 3,
+                "image": "/svgIcons/notification2.svg"
+            },
+            {
+                "title": "Messages",
+                "stat": 4,
+                "image": "/svgIcons/message2.svg"
+            },
+            {
+                "title": "Subscribers",
+                "stat": 240,
+                "image": "/svgIcons/subscriber2.svg"
+            },
+            {
+                "title": "Administrators",
+                "stat": 5,
+                "image": "/svgIcons/administrator2.svg"
+            },
+            {
+                "title": "Admins",
+                "stat": 2,
+                "image": "/svgIcons/administrator2.svg"
+            },
+            {
+                "title": "Agencies",
+                "stat": 4,
+                "image": "/svgIcons/agency2.svg"
+            },
+            {
+                "title": "Hosts",
+                "stat": 12,
+                "image": "/svgIcons/host2.svg"
+            },
+            {
+                "title": "Agents",
+                "stat": 14,
+                "image": "/svgIcons/agent2.svg"
+            },
+            {
+                "title": "Users",
+                "stat": 540,
+                "image": "/svgIcons/users2.svg"
+            },
+            {
+                "title": "Blocked",
+                "stat": 21,
+                "image": "/svgIcons/blocked2.svg"
+            }
+        ],
+        "tableData": {
+            "headings": [
+                "User",
+                "Email",
+                "Phone",
+                "Country",
+                "Date",
+                "Status",
+                "Type",
+                "Admin",
+                "Agency",
+                ""
+            ],
+            "rows": [
+                {
+                    "date": "2021-06-12",
+                    "image": "/user.jpg",
+                    "name": "Jack Sparrow",
+                    "country": "England",
+                    "status": true,
+                    "type": "User",
+                    "admin": false,
+                    "agency": null,
+                    "email": "jack@sparrow.com",
+                    "number": "03010203040"
+                },
+                {
+                    "date": "2001-07-06",
+                    "image": "/user2.jpg",
+                    "name": "Bruce Wayne",
+                    "country": "America",
+                    "status": false,
+                    "type": "Admin",
+                    "admin": true,
+                    "agency": "Moderator",
+                    "email": "Bruce@wayne.com",
+                    "number": "03010203040"
+                },
+                {
+                    "date": "2004-12-12",
+                    "image": "/user3.jpg",
+                    "name": "Imran Khan",
+                    "country": "Pakistan",
+                    "status": false,
+                    "type": "User",
+                    "admin": false,
+                    "agency": null,
+                    "email": "ik@pti.com",
+                    "number": "03010203040"
+                },
+                {
+                    "date": "2011-04-02",
+                    "image": "/user4.jpg",
+                    "name": "Bilawal Bhutto",
+                    "country": "England",
+                    "status": true,
+                    "type": "Admin",
+                    "admin": true,
+                    "agency": "Support Team",
+                    "email": "bilawal@bhutto.com",
+                    "number": "03010203040"
+                }
+            ]
+        }
+    }
+}

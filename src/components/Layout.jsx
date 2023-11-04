@@ -10,13 +10,13 @@ function Layout() {
   return (
     <div>
         <div className="w-screen h-screen flex flex-col md:flex-row">
-            <div className='block md:hidden'>
+            <div className='block md:hidden shadow-lg'>
               <MobileSidebar />
             </div>
             <div className='hidden md:block md:w-3/12 xl:w-2/12 p-0'>
                 <Sidebar />
             </div>
-            <div className={'w-screen md:w-9/12 xl:w-10/12 flex flex-col  overflow-y-scroll ' + styles.pageBgColor}>
+            <div className={'w-screen md:w-9/12 xl:w-10/12 flex flex-col pt-5 md:pt-0 overflow-y-scroll ' + styles.pageBgColor}>
               <div className='hidden md:block w-100 p-5'>
                 <HeaderBar />
               </div>

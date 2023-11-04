@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import Sidebar from './Sidebar';
+import HeaderInfo from './HeaderInfo';
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -40,7 +41,10 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <div>
         <React.Fragment>
-          <Button onClick={toggleDrawer("left", true)}><MenuIcon /></Button>
+          <div className='flex flex-row justify-between shadow-lg hover:shadow-2xl duration-300 rounded-b-2xl bg-white p-3'>
+          <Button onClick={toggleDrawer("left", true)}><MenuIcon className='text-black' /></Button>
+          <HeaderInfo />
+          </div>
           <SwipeableDrawer
             anchor="left"
             open={state["left"]}
