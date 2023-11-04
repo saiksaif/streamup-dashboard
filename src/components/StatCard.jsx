@@ -1,5 +1,3 @@
-import ApartmentOutlinedIcon from '@mui/icons-material/ApartmentOutlined';
-
 function StatCard(props) {
   return (
     <div className="w-100 md:w-1/2 lg:w-1/4 px-5 pb-5">

@@ -126,5 +126,61 @@
                 }
             ]
         }
+    },
+    "users": {
+        "userTypes": [
+            {"Users" : {
+                "users": [],
+                "stats": [
+                    {"Total": 0},
+                    {"Active": 0},
+                    {"Pending": 0},
+                    {"Blocked": 0}
+                ]
+            }},
+            {"Hosts" : {
+                "hosts": [],
+                "stats": [
+                    {"Total": 0},
+                    {"Active": 0},
+                    {"Pending": 0},
+                    {"Blocked": 0}
+                ]
+            }},
+            {"Admins" : {
+                "admins": [],
+                "stats": [
+                    {"Total": 0},
+                    {"Active": 0},
+                    {"Pending": 0},
+                    {"Blocked": 0}
+                ]
+            }},
+            {"Administrators" : {
+                "administrators": [],
+                "stats": [
+                    {"Total": 0},
+                    {"Active": 0},
+                    {"Pending": 0},
+                    {"Blocked": 0}
+                ]
+            }},
+            {"TopupAgents" : {
+                "topupAgents": [],
+                "stats": [
+                    {"Total": 0},
+                    {"Active": 0},
+                    {"Blocked": 0}
+                ]
+            }},
+            {"BlockedUsers" : {
+                "blockedUsers": [],
+                "stats": [
+                    {"Total": 0},
+                    {"Unblocked": 0},
+                    {"Blocked": 0}
+                ]
+            }}
+        ]
     }
 }
