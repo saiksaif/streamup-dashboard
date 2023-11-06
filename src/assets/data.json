@@ -127,60 +127,455 @@
             ]
         }
     },
-    "users": {
-        "userTypes": [
-            {"Users" : {
-                "users": [],
+    "users": [
+        {
+            "label": "Users",
+            "data": {
+                "headings": [
+                    "User",
+                    "Email",
+                    "Phone",
+                    "Country",
+                    "Date",
+                    "Status",
+                    ""
+                ],
+                "list": [
+                    {
+                        "date": "2021-06-12",
+                        "image": "/user.jpg",
+                        "name": "Jack Sparrow",
+                        "country": "England",
+                        "status": true,
+                        "type": "User",
+                        "admin": false,
+                        "agency": null,
+                        "email": "jack@sparrow.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2001-07-06",
+                        "image": "/user2.jpg",
+                        "name": "Bruce Wayne",
+                        "country": "America",
+                        "status": false,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Moderator",
+                        "email": "Bruce@wayne.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2004-12-12",
+                        "image": "/user3.jpg",
+                        "name": "Imran Khan",
+                        "country": "Pakistan",
+                        "status": false,
+                        "type": "User",
+                        "admin": false,
+                        "agency": null,
+                        "email": "ik@pti.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2011-04-02",
+                        "image": "/user4.jpg",
+                        "name": "Bilawal Bhutto",
+                        "country": "England",
+                        "status": true,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Support Team",
+                        "email": "bilawal@bhutto.com",
+                        "number": "03010203040"
+                    }
+                ],
                 "stats": [
-                    {"Total": 0},
-                    {"Active": 0},
-                    {"Pending": 0},
-                    {"Blocked": 0}
+                    {
+                        "title": "Total",
+                        "stat": 12,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Active",
+                        "stat": 14,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Pending",
+                        "stat": 13,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Blocked",
+                        "stat": 5,
+                        "image": "/svgIcons/blocked2.svg"
+                    }
                 ]
-            }},
-            {"Hosts" : {
-                "hosts": [],
+            }
+        },
+        {
+            "label": "Hosts",
+            "data": {
+                "headings": [
+                    "User",
+                    "Email",
+                    "Phone",
+                    "Country",
+                    "Date",
+                    "Status",
+                    ""
+                ],
+                "list": [
+                    {
+                        "date": "2021-06-12",
+                        "image": "/user.jpg",
+                        "name": "Jack Sparrow",
+                        "country": "England",
+                        "status": true,
+                        "type": "User",
+                        "admin": false,
+                        "agency": null,
+                        "email": "jack@sparrow.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2001-07-06",
+                        "image": "/user2.jpg",
+                        "name": "Bruce Wayne",
+                        "country": "America",
+                        "status": false,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Moderator",
+                        "email": "Bruce@wayne.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2004-12-12",
+                        "image": "/user3.jpg",
+                        "name": "Imran Khan",
+                        "country": "Pakistan",
+                        "status": false,
+                        "type": "User",
+                        "admin": false,
+                        "agency": null,
+                        "email": "ik@pti.com",
+                        "number": "03010203040"
+                    }
+                ],
                 "stats": [
-                    {"Total": 0},
-                    {"Active": 0},
-                    {"Pending": 0},
-                    {"Blocked": 0}
+                    {
+                        "title": "Total",
+                        "stat": 3,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Active",
+                        "stat": 1,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Pending",
+                        "stat": 4,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Blocked",
+                        "stat": 2,
+                        "image": "/svgIcons/blocked2.svg"
+                    }
                 ]
-            }},
-            {"Admins" : {
-                "admins": [],
+            }
+        },
+        {
+            "label": "Admins",
+            "data": {
+                "headings": [
+                    "User",
+                    "Email",
+                    "Phone",
+                    "Country",
+                    "Date",
+                    "Status",
+                    "Agency",
+                    ""
+                ],
+                "list": [
+                    {
+                        "date": "2021-06-12",
+                        "image": "/user.jpg",
+                        "name": "Jack Sparrow",
+                        "country": "England",
+                        "status": true,
+                        "type": "User",
+                        "admin": false,
+                        "agency": null,
+                        "email": "jack@sparrow.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2001-07-06",
+                        "image": "/user2.jpg",
+                        "name": "Bruce Wayne",
+                        "country": "America",
+                        "status": false,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Moderator",
+                        "email": "Bruce@wayne.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2011-04-02",
+                        "image": "/user4.jpg",
+                        "name": "Bilawal Bhutto",
+                        "country": "England",
+                        "status": true,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Support Team",
+                        "email": "bilawal@bhutto.com",
+                        "number": "03010203040"
+                    }
+                ],
                 "stats": [
-                    {"Total": 0},
-                    {"Active": 0},
-                    {"Pending": 0},
-                    {"Blocked": 0}
+                    {
+                        "title": "Total",
+                        "stat": 2,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Active",
+                        "stat": 1,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Pending",
+                        "stat": 1,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Blocked",
+                        "stat": 0,
+                        "image": "/svgIcons/blocked2.svg"
+                    }
                 ]
-            }},
-            {"Administrators" : {
-                "administrators": [],
+            }
+        },
+        {
+            "label": "Administrators",
+            "data": {
+                "headings": [
+                    "User",
+                    "Email",
+                    "Phone",
+                    "Country",
+                    "Date",
+                    "Status",
+                    "Agency",
+                    ""
+                ],
+                "list": [
+                    {
+                        "date": "2001-07-06",
+                        "image": "/user2.jpg",
+                        "name": "Bruce Wayne",
+                        "country": "America",
+                        "status": false,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Moderator",
+                        "email": "Bruce@wayne.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2004-12-12",
+                        "image": "/user3.jpg",
+                        "name": "Imran Khan",
+                        "country": "Pakistan",
+                        "status": false,
+                        "type": "User",
+                        "admin": false,
+                        "agency": null,
+                        "email": "ik@pti.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2011-04-02",
+                        "image": "/user4.jpg",
+                        "name": "Bilawal Bhutto",
+                        "country": "England",
+                        "status": true,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Support Team",
+                        "email": "bilawal@bhutto.com",
+                        "number": "03010203040"
+                    }
+                ],
                 "stats": [
-                    {"Total": 0},
-                    {"Active": 0},
-                    {"Pending": 0},
-                    {"Blocked": 0}
+                    {
+                        "title": "Total",
+                        "stat": 7,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Active",
+                        "stat": 5,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Pending",
+                        "stat": 11,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Blocked",
+                        "stat": 3,
+                        "image": "/svgIcons/blocked2.svg"
+                    }
                 ]
-            }},
-            {"TopupAgents" : {
-                "topupAgents": [],
+            }
+        },
+        {
+            "label": "Topup Agents",
+            "data": {
+                "headings": [
+                    "User",
+                    "Email",
+                    "Phone",
+                    "Country",
+                    "Date",
+                    "Status",
+                    "Agency",
+                    ""
+                ],
+                "list": [
+                    {
+                        "date": "2001-07-06",
+                        "image": "/user2.jpg",
+                        "name": "Bruce Wayne",
+                        "country": "America",
+                        "status": false,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Moderator",
+                        "email": "Bruce@wayne.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2011-04-02",
+                        "image": "/user4.jpg",
+                        "name": "Bilawal Bhutto",
+                        "country": "England",
+                        "status": true,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Support Team",
+                        "email": "bilawal@bhutto.com",
+                        "number": "03010203040"
+                    }
+                ],
                 "stats": [
-                    {"Total": 0},
-                    {"Active": 0},
-                    {"Blocked": 0}
+                    {
+                        "title": "Total",
+                        "stat": 8,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Active",
+                        "stat": 6,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Blocked",
+                        "stat": 4,
+                        "image": "/svgIcons/blocked2.svg"
+                    }
                 ]
-            }},
-            {"BlockedUsers" : {
-                "blockedUsers": [],
+            }
+        },
+        {
+            "label": "Blocked Users",
+            "data": {
+                "headings": [
+                    "User",
+                    "Email",
+                    "Phone",
+                    "Country",
+                    "Date",
+                    "Status",
+                    ""
+                ],
+                "list": [
+                    {
+                        "date": "2021-06-12",
+                        "image": "/user.jpg",
+                        "name": "Jack Sparrow",
+                        "country": "England",
+                        "status": true,
+                        "type": "User",
+                        "admin": false,
+                        "agency": null,
+                        "email": "jack@sparrow.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2001-07-06",
+                        "image": "/user2.jpg",
+                        "name": "Bruce Wayne",
+                        "country": "America",
+                        "status": false,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Moderator",
+                        "email": "Bruce@wayne.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2004-12-12",
+                        "image": "/user3.jpg",
+                        "name": "Imran Khan",
+                        "country": "Pakistan",
+                        "status": false,
+                        "type": "User",
+                        "admin": false,
+                        "agency": null,
+                        "email": "ik@pti.com",
+                        "number": "03010203040"
+                    },
+                    {
+                        "date": "2011-04-02",
+                        "image": "/user4.jpg",
+                        "name": "Bilawal Bhutto",
+                        "country": "England",
+                        "status": true,
+                        "type": "Admin",
+                        "admin": true,
+                        "agency": "Support Team",
+                        "email": "bilawal@bhutto.com",
+                        "number": "03010203040"
+                    }
+                ],
                 "stats": [
-                    {"Total": 0},
-                    {"Unblocked": 0},
-                    {"Blocked": 0}
+                    {
+                        "title": "Total",
+                        "stat": 7,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Unblocked",
+                        "stat": 50,
+                        "image": "/svgIcons/users2.svg"
+                    },
+                    {
+                        "title": "Blocked",
+                        "stat": 7,
+                        "image": "/svgIcons/blocked2.svg"
+                    }
                 ]
-            }}
-        ]
-    }
+            }
+        }
+    ]
 }

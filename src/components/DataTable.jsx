@@ -37,19 +37,49 @@ function DataTable(props) {
                     </div>
                   </div>
                 </td>
-                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[150px]">
-                  <p className="text-gray-900 whitespace-no-wrap">{row.email}</p>
-                </td>
-                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
-                  <p className="text-gray-900 whitespace-no-wrap">{row.number}</p>
-                </td>
-                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[90px]">
-                  <p className="text-gray-900 whitespace-no-wrap">{row.country}</p>
-                </td>
-                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[120px]">
-                  <p className="text-gray-900 whitespace-no-wrap">{row.date}</p>
-                </td>
-                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[100px]">
+                {/* {console.log(props.headings.includes("Email"))} */}
+                {!props.showExtra ? (props.headings.includes("Email") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[150px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.email}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[150px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.email}</p>
+                  </td>
+                )}
+                
+                {!props.showExtra ? (props.headings.includes("Phone") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.number}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.number}</p>
+                  </td>
+                )}
+                
+                {!props.showExtra ? (props.headings.includes("Country") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.country}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.country}</p>
+                  </td>
+                )}
+                
+                {!props.showExtra ? (props.headings.includes("Date") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.date}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.date}</p>
+                  </td>
+                )}
+                
+                {!props.showExtra ? (props.headings.includes("Status") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[100px]">
                   <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
                     <span
                       aria-hidden="true"
@@ -63,10 +93,35 @@ function DataTable(props) {
                     </span>
                   </span>
                 </td>
-                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[90px]">
-                  <p className="text-gray-900 whitespace-no-wrap">{row.type}</p>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[100px]">
+                  <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                    <span
+                      aria-hidden="true"
+                      className={
+                        "absolute inset-0 rounded-full opacity-50" +
+                        (row.status ? " bg-green-200" : " bg-red-200")
+                      }
+                    ></span>
+                    <span className="relative">
+                      {row.status ? "Active" : "Inactive"}
+                    </span>
+                  </span>
                 </td>
-                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[70px]">
+                )}
+                
+                {!props.showExtra ? (props.headings.includes("Type") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.type}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.type}</p>
+                  </td>
+                )}
+
+                {!props.showExtra ? (props.headings.includes("Admin") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[70px]">
                   <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
                     <span
                       aria-hidden="true"
@@ -78,11 +133,35 @@ function DataTable(props) {
                     <span className="relative">{row.admin ? "Yes" : "No"}</span>
                   </span>
                 </td>
-                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
-                  <p className="text-gray-900 whitespace-no-wrap">
-                    {row.agency ? row.agency : "--"}
-                  </p>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[70px]">
+                  <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                    <span
+                      aria-hidden="true"
+                      className={
+                        "absolute inset-0 rounded-full opacity-50" +
+                        (row.admin ? " bg-green-200" : " bg-red-200")
+                      }
+                    ></span>
+                    <span className="relative">{row.admin ? "Yes" : "No"}</span>
+                  </span>
                 </td>
+                )}
+                
+                {!props.showExtra ? (props.headings.includes("Agency") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">
+                      {row.agency ? row.agency : "--"}
+                    </p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">
+                      {row.agency ? row.agency : "--"}
+                    </p>
+                  </td>
+                )}
+                
                 <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
                   <a href="#" className="text-indigo-600 hover:text-indigo-900">
                     Edit
