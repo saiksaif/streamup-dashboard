@@ -7,7 +7,7 @@ function DataTable(props) {
         <table className="min-w-full leading-normal mb-0">
           <thead>
             <tr>
-              {props.headings.map((heading, index) => (
+              {props?.headings?.map((heading, index) => (
                 <th
                   key={index}
                   scope="col"
@@ -19,7 +19,7 @@ function DataTable(props) {
             </tr>
           </thead>
           <tbody>
-            {props.rows.map((row, index) => (
+            {props?.rows?.map((row, index) => (
               <tr key={index} className="text-center">
                 <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[120px]">
                   <div className="flex items-center">
@@ -38,7 +38,7 @@ function DataTable(props) {
                   </div>
                 </td>
                 {/* {console.log(props.headings.includes("Email"))} */}
-                {!props.showExtra ? (props.headings.includes("Email") ? (
+                {!props?.showExtra ? (props?.headings.includes("Email") ? (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[150px]">
                     <p className="text-gray-900 whitespace-no-wrap">{row.email}</p>
                   </td>
@@ -48,7 +48,7 @@ function DataTable(props) {
                   </td>
                 )}
                 
-                {!props.showExtra ? (props.headings.includes("Phone") ? (
+                {!props?.showExtra ? (props?.headings.includes("Phone") ? (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
                     <p className="text-gray-900 whitespace-no-wrap">{row.number}</p>
                   </td>
@@ -58,7 +58,7 @@ function DataTable(props) {
                   </td>
                 )}
                 
-                {!props.showExtra ? (props.headings.includes("Country") ? (
+                {!props?.showExtra ? (props?.headings.includes("Country") ? (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
                     <p className="text-gray-900 whitespace-no-wrap">{row.country}</p>
                   </td>
@@ -68,7 +68,7 @@ function DataTable(props) {
                   </td>
                 )}
                 
-                {!props.showExtra ? (props.headings.includes("Date") ? (
+                {!props?.showExtra ? (props?.headings.includes("Date") ? (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
                     <p className="text-gray-900 whitespace-no-wrap">{row.date}</p>
                   </td>
@@ -78,7 +78,7 @@ function DataTable(props) {
                   </td>
                 )}
                 
-                {!props.showExtra ? (props.headings.includes("Status") ? (
+                {!props?.showExtra ? (props?.headings.includes("Status") ? (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[100px]">
                   <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
                     <span
@@ -110,7 +110,7 @@ function DataTable(props) {
                 </td>
                 )}
                 
-                {!props.showExtra ? (props.headings.includes("Type") ? (
+                {!props?.showExtra ? (props?.headings.includes("Type") ? (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
                     <p className="text-gray-900 whitespace-no-wrap">{row.type}</p>
                   </td>
@@ -120,7 +120,7 @@ function DataTable(props) {
                   </td>
                 )}
 
-                {!props.showExtra ? (props.headings.includes("Admin") ? (
+                {!props?.showExtra ? (props?.headings.includes("Admin") ? (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[70px]">
                   <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
                     <span
@@ -148,7 +148,7 @@ function DataTable(props) {
                 </td>
                 )}
                 
-                {!props.showExtra ? (props.headings.includes("Agency") ? (
+                {!props?.showExtra ? (props?.headings.includes("Agency") ? (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
                     <p className="text-gray-900 whitespace-no-wrap">
                       {row.agency ? row.agency : "--"}

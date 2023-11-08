@@ -51,9 +51,9 @@ function Sidebar() {
                     <SidebarLink href="/audio-streaming" name="Audio Streaming" icon={<GraphicEqIcon />} />
                     <SidebarLink href="/video-streaming" name="Video Streaming" icon={<SmartDisplayOutlinedIcon />} />
                     <SidebarLink href="/news" name="News" icon={<NewspaperOutlinedIcon />} />
-                    <SidebarLink href="/blog" name="Blog" icon={<BookOutlinedIcon />} />
+                    <SidebarLink href="/blogs" name="Blogs" icon={<BookOutlinedIcon />} />
                     <SidebarLink href="/subscribers" name="Subscribers" icon={<SummarizeOutlinedIcon />} />
-                    <SidebarLink href="/contact" name="Contact" icon={<CallOutlinedIcon />} />
+                    <SidebarLink href="/contacts" name="Contact" icon={<CallOutlinedIcon />} />
                     <SidebarLink href="/faqs" name="FAQs" icon={<LiveHelpOutlinedIcon />} />
                     <SidebarLink href="/onboard" name="Onboard" icon={<NoteAddOutlinedIcon />} />
                     <SidebarLink href="/categories" name="Categories" icon={<SubjectIcon />} />
