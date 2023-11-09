@@ -661,6 +661,267 @@
             ]
         }
     },
+    "notifications": {
+        "tableData": {
+            "headings": [
+                "Date",
+                "Title",
+                "Description",
+                "Status",
+                ""
+            ],
+            "rows": [
+                {
+                    "date": "2021-06-12",
+                    "title": "New User",
+                    "description": "Notification for addition of new user.",
+                    "status": true
+                },
+                {
+                    "date": "2001-07-06",
+                    "title": "User blocked",
+                    "description": "Notification for user being blocked.",
+                    "status": true
+                },
+                {
+                    "date": "2004-12-12",
+                    "title": "New Admin",
+                    "description": "Notification for addition of another admin to the dashboard.",
+                    "status": false
+                },
+                {
+                    "date": "2011-04-02",
+                    "title": "New Agency",
+                    "description": "This notification will popup on the screen when a new agency has been added to the application for users to take benefit of.",
+                    "status": false
+                }
+            ]
+        }
+    },
+    "transactions": {
+        "tableData": {
+            "headings": [
+                "Date",
+                "From",
+                "To",
+                "Amount",
+                "Type",
+                "Status",
+                ""
+            ],
+            "rows": [
+                {
+                    "date": "2021-06-12",
+                    "from": "Jack",
+                    "to": "Sparrow",
+                    "amount": 1000,
+                    "type": "Direct",
+                    "status": true
+                },
+                {
+                    "date": "2001-07-06",
+                    "from": "Will",
+                    "to": "Smith",
+                    "amount": 100,
+                    "type": "Online",
+                    "status": false
+                },
+                {
+                    "date": "2004-12-12",
+                    "from": "Imran",
+                    "to": "Bilawal",
+                    "amount": 10,
+                    "type": "In-Direct",
+                    "status": false
+                },
+                {
+                    "date": "2011-04-02",
+                    "from": "Batman",
+                    "to": "Bruce Wayne",
+                    "amount": 100000,
+                    "type": "Wire",
+                    "status": true
+                }
+            ]
+        }
+    },
+    "advertisements": {
+        "tableData": {
+            "headings": [
+                "Date",
+                "Thumbnail",
+                "Title",
+                "Description",
+                "Validity",
+                "Price",
+                "Category",
+                "Status",
+                ""
+            ],
+            "rows": [
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user.jpg",
+                    "title": "Short",
+                    "description": "Short time period description",
+                    "validity": "10 Days",
+                    "price": 1000,
+                    "category": "Cheap",
+                    "status": true
+                },
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user4.jpg",
+                    "title": "Extra",
+                    "description": "Prolonged time period description",
+                    "validity": "15 Days",
+                    "price": 3000,
+                    "category": "Cheap",
+                    "status": false
+                },
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user3.jpg",
+                    "title": "Medium",
+                    "description": "Medium time period description",
+                    "validity": "20 Days",
+                    "price": 7000,
+                    "category": "Moderate",
+                    "status": false
+                },
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user2.jpg",
+                    "title": "Long",
+                    "description": "Long time period description",
+                    "validity": "100 Days",
+                    "price": 10000,
+                    "category": "Expensive",
+                    "status": true
+                }
+            ]
+        }
+    },
+    "newsfeeds": {
+        "tableData": {
+            "headings": [
+                "User",
+                "Date",
+                "Thumbnail",
+                "Description",
+                ""
+            ],
+            "rows": [
+                {
+                    "image": "/user.jpg",
+                    "name": "Jack Sparrow",
+                    "date": "2021-06-12",
+                    "thumbnail": "/user2.jpg",
+                    "description": "Short time period description"
+                },
+                {
+                    "date": "2021-06-12",
+                    "image": "/user.jpg",
+                    "name": "Jack Sparrow",
+                    "thumbnail": "/user.jpg",
+                    "description": "Short time period description"
+                },
+                {
+                    "date": "2021-06-12",
+                    "image": "/user.jpg",
+                    "name": "Jack Sparrow",
+                    "thumbnail": "/user3.jpg",
+                    "description": "Short time period description"
+                },
+                {
+                    "date": "2021-06-12",
+                    "image": "/user.jpg",
+                    "name": "Jack Sparrow",
+                    "thumbnail": "/user4.jpg",
+                    "description": "Short time period description"
+                }
+            ]
+        }
+    },
+    "stories": {
+        "tableData": {
+            "headings": [
+                "Date",
+                "Thumbnail",
+                "Description",
+                "Status",
+                ""
+            ],
+            "rows": [
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user2.jpg",
+                    "description": "Short time period description",
+                    "status": false
+                },
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user.jpg",
+                    "description": "Short time period description",
+                    "status": false
+                },
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user3.jpg",
+                    "description": "Short time period description",
+                    "status": false
+                },
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user4.jpg",
+                    "description": "Short time period description",
+                    "status": false
+                }
+            ]
+        }
+    },
+    "banners": {
+        "tableData": {
+            "headings": [
+                "Date",
+                "Thumbnail",
+                "Title",
+                "Description",
+                "Status",
+                ""
+            ],
+            "rows": [
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user2.jpg",
+                    "title":"New Banner",
+                    "description": "Short time period description",
+                    "status": false
+                },
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user.jpg",
+                    "title":"Old Banner",
+                    "description": "Short time period description",
+                    "status": false
+                },
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user3.jpg",
+                    "title":"Big Banner",
+                    "description": "Short time period description",
+                    "status": false
+                },
+                {
+                    "date": "2021-06-12",
+                    "thumbnail": "/user4.jpg",
+                    "title":"Small Banner",
+                    "description": "Short time period description",
+                    "status": false
+                }
+            ]
+        }
+    },
     "categories": [
         {
             "label": "Parent",

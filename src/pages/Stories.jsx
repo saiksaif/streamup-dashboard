@@ -5,7 +5,7 @@ function Stories() {
   return (
     <div>
       <div className="w-100 px-1 md:px-5 pb-0">
-        <DataTable headings={data.agencies.tableData.headings} rows={data.agencies.tableData.rows} />
+        <DataTable headings={data.stories.tableData.headings} rows={data.stories.tableData.rows} />
       </div>
     </div>
   )

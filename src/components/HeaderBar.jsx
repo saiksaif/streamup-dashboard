@@ -13,7 +13,12 @@ function HeaderBar() {
         <span className={style.capitalize + ' text-xl font-semibold px-2 pt-1'}>
           {title}
         </span>
-      ) : ''}
+      ) : (
+        <span className={style.capitalize + ' text-xl font-semibold px-2 pt-1'}>
+          Dashboard
+        </span>
+      )
+      }
       <HeaderInfo />
     </div>
   );

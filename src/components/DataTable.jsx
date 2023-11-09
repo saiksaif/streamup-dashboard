@@ -21,22 +21,42 @@ function DataTable(props) {
           <tbody>
             {props?.rows?.map((row, index) => (
               <tr key={index} className="text-center">
-                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[120px]">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <a href="#" className="relative block">
-                        <img
-                          alt="profile"
-                          src={row.image}
-                          className="mx-auto object-cover rounded-full h-10 w-10 "
-                        />
-                      </a>
+                {!props?.showExtra ? (props?.headings.includes("User") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[120px]">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0">
+                        <a href="#" className="relative block">
+                          <img
+                            alt="profile"
+                            src={row.image}
+                            className="mx-auto object-cover rounded-full h-10 w-10 "
+                          />
+                        </a>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-gray-900 whitespace-no-wrap">{row.name}</p>
+                      </div>
                     </div>
-                    <div className="ml-3">
-                      <p className="text-gray-900 whitespace-no-wrap">{row.name}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[120px]">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0">
+                        <a href="#" className="relative block">
+                          <img
+                            alt="profile"
+                            src={row.image}
+                            className="mx-auto object-cover rounded-full h-10 w-10 "
+                          />
+                        </a>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-gray-900 whitespace-no-wrap">{row.name}</p>
+                      </div>
                     </div>
-                  </div>
-                </td>
+                  </td>
+                )}
+      
                 {/* {console.log(props.headings.includes("Email"))} */}
                 {!props?.showExtra ? (props?.headings.includes("Email") ? (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[150px]">
@@ -75,6 +95,95 @@ function DataTable(props) {
                 ) : null) : (
                   <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
                     <p className="text-gray-900 whitespace-no-wrap">{row.date}</p>
+                  </td>
+                )}
+                
+                {!props?.showExtra ? (props?.headings.includes("From") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.from}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.from}</p>
+                  </td>
+                )}
+                
+                {!props?.showExtra ? (props?.headings.includes("To") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.to}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.to}</p>
+                  </td>
+                )}
+                
+                {!props?.showExtra ? (props?.headings.includes("Amount") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.amount}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.amount}</p>
+                  </td>
+                )}
+                
+                {!props?.showExtra ? (props?.headings.includes("Thumbnail") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <img className="max-w-[100px] max-h-[100px]" src={row.thumbnail} alt="Thumbnail Image" />
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                  <img className="max-w-[100px] max-h-[100px]" src={row.thumbnail} alt="Thumbnail Image" />
+                  </td>
+                )}
+                {!props?.showExtra ? (props?.headings.includes("Title") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.title}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px]">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.title}</p>
+                  </td>
+                )}
+                
+                {!props?.showExtra ? (props?.headings.includes("Description") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px] max-w-[220px] overflow-ellipsis truncate">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.description}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px] max-w-[220px] overflow-ellipsis truncate">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.description}</p>
+                  </td>
+                )}
+                
+                {!props?.showExtra ? (props?.headings.includes("Validity") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px] max-w-[220px] overflow-ellipsis truncate">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.validity}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px] max-w-[220px] overflow-ellipsis truncate">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.validity}</p>
+                  </td>
+                )}
+                
+                {!props?.showExtra ? (props?.headings.includes("Price") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px] max-w-[220px] overflow-ellipsis truncate">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.price}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px] max-w-[220px] overflow-ellipsis truncate">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.price}</p>
+                  </td>
+                )}
+                
+                {!props?.showExtra ? (props?.headings.includes("Category") ? (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px] max-w-[220px] overflow-ellipsis truncate">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.category}</p>
+                  </td>
+                ) : null) : (
+                  <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 min-w-[110px] max-w-[220px] overflow-ellipsis truncate">
+                    <p className="text-gray-900 whitespace-no-wrap">{row.category}</p>
                   </td>
                 )}
                 
