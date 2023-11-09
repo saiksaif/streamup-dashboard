@@ -1,4 +1,4 @@
-import PopupModal from "../components/popupModal";
+import PopupModal from "../components/PopupModal";
 import DataTable from "../components/DataTable";
 import data from "../assets/data.json";
 
