@@ -1,5 +1,6 @@
 import CustomizedTabs from "../components/CustomizedTabs";
 import EditProfile from "../components/EditProfile";
+import WebsiteSettings from "../components/WebsiteSettings";
 import data from "../assets/data.json";
 
 function Settings() {
@@ -17,9 +18,7 @@ function Settings() {
     // }
     const websiteSettings = (index) => {
         return (
-            <div>
-            other Here
-          </div>
+            <WebsiteSettings />
         )
     }
     // const badges = (index) => {
