@@ -1,4 +1,5 @@
 {
+    "title": "AWRA LIVE",
     "header": {
         "name": "Charlie",
         "position": "CTO",
@@ -1248,16 +1249,10 @@
     ],
     "setting": [
         {
-            "label": "Change Password"
-        },
-        {
             "label": "Profile Settings"
         },
         {
             "label": "Website Settings"
-        },
-        {
-            "label": "Badges"
         }
     ]
 }

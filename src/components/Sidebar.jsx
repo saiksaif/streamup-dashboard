@@ -1,6 +1,6 @@
-import React, { useState, useEffect }  from 'react'
 import { Link } from 'react-router-dom'
 import styles from "./styles/sidebar.module.css";
+import data from "../assets/data.json";
 
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import GraphicEqIcon from '@mui/icons-material/GraphicEq';
@@ -34,7 +34,7 @@ function Sidebar() {
                 <div className="flex items-center justify-start mx-6 mt-4 mb-0">
                     <img className="h-10" src="/icon.png" />
                     <span className="text-gray-600 ml-4 text-2xl font-bold">
-                        StreamUp
+                        {data.title}
                     </span>
                 </div>
                 <nav className={"mt-6 px-4 w-100 pt-1 " + styles.sidebarNav}>

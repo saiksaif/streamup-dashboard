@@ -103,7 +103,7 @@ export default function FullWidthTabs({data, child}) {
       >
         {data.map((tab, index) => (
           <TabPanel key={index} value={value} index={index} dir={theme.direction}>
-            {child(index)}
+            {child[index](index)}
           </TabPanel>
         ))}
       </SwipeableViews>
